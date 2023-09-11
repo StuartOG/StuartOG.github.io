@@ -27,9 +27,9 @@ margin: 20px auto;
 
 padding: 30px;
 
-background-color: #ff00ff;
+background-color: #ffffff;
 
-border: double 10px #00ff00;
+border: double 10px #005eff;
 
 }
 #header /* Styles for Heading */
@@ -38,7 +38,7 @@ border: double 10px #00ff00;
 
 padding: 5px;
 
-background-color: #00ff00;
+background-color: #ffffff;
 
 text-align: center;
 }
@@ -61,7 +61,7 @@ height:189px;
 
 text-align: left;
 
-background-color: #00ff00;
+background-color: #0022ff;
 
 }
 #right-column h2 
