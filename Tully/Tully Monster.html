@@ -24,10 +24,11 @@
 
 <form name="question">
     <p id="box_2">Question - Where did the Tully Monster live?</p> 
-    <button type="button" onclick="validate()"> Show answer  </button><b></b>
+    <button type="button" onclick="document.getElementById('box').innerHTML = 'The Tully Monster lived in Illinois'"> Show answer  </button><b></b>
 
+<p>
 Answer: <input type="text" name="answer" > 
-
+</p>
 <script>
 function validate() {
 
