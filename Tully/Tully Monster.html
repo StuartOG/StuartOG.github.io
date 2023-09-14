@@ -24,7 +24,7 @@
 
 <form name="question">
     <p id="box_2">Question - Where did the Tully Monster live?</p> 
-    <button type="button" onclick="document.getElementById('box_2').innerHTML = 'The Tully Monster lived in the tropical estuaries of Illinois, USA'">Show answer</button><b></b>
+    <button type="button" onclick="validate()"> Show answer  </button><b></b>
 
 Answer: <input type="text" name="answer" > 
 
@@ -33,14 +33,19 @@ function validate() {
 
     var x = document.forms["question"]["answer"].value;
     
-    if (x == "35cm") {
-    
-    else
-        
+if (x == "") {
+        document.getElementById("box").style.color="red";
+}
+else 
+if (x == "35cm"){
+
+alert("Correct!");
+
+}
     
     document.getElementById("box").style.color="red";
     
-    }
+    
     
     }
     </script>
