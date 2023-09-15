@@ -5,11 +5,8 @@
 	<style>
 		body {font-family: arial, "sans-serif";}
 	</style>
-
-
 </head>
 <body>
-
 
 <h1>The Tully Monster</h1>
 
@@ -18,38 +15,26 @@
 <img src="TullyMonster.png">
 
 <form name="question">
-<p id="box">Question - How long was the Tully Monster?</p> 
-<button type="button" onclick="validate()">Show answer</button>
+	<p id="box">Question - How long was the Tully Monster?</p> 
+	<button type="button" onclick="validate()">Show answer</button>
+	<p id="box2">Click below to find out where it lived.</p>
+	<button type="button" onclick="document.getElementById('box2').innerHTML = 'It lived in the tropical estuaries of Illinois, USA.'">Show Habitat</button><br><br>
+	Answer: <input type="text" name="answer">
 </form>
 
-<form name="question">
-    <p id="box_2">Question - Where did the Tully Monster live?</p> 
-    <button type="button" onclick="document.getElementById('box').innerHTML = 'The Tully Monster lived in Illinois'"> Show answer  </button><b></b>
-
-<p>
-Answer: <input type="text" name="answer" > 
-</p>
 <script>
-function validate() {
+	function validate() {
+    	var x = document.forms["question"]["answer"].value;
+    	if (x != "35cm") {
+        	document.getElementById("box").style.color="red"; 
+	  	}
+		else if (x == "35cm")
+		{
+	   		alert("Correct!");	
+		}
 
-    var x = document.forms["question"]["answer"].value;
-    
-if (x == "") {
-        document.getElementById("box").style.color="red";
-}
-else 
-if (x == "35cm"){
+	}
 
-alert("Correct!");
-
-}
-    
-    document.getElementById("box").style.color="red";
-    
-    
-    
-    }
-    </script>
+</script>
 </body>
-
 </html>
