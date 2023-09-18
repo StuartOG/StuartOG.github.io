@@ -9,7 +9,7 @@ const question = [
         ]
     },
     {
-        question: "What is 4x4?",
+        question: "What is the capital of Australia?",
         answers: [
             {text: "8", correct: false},
             {text: "16", correct: true},

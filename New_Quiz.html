@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The best quiz</title>
+    <link href="New_Quiz.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>The Quiz Starts Here</h1>
+
+    <h2>Enter your answers below in the box provided or use the dropdown menu</h2>
+
+    <form name="question">
+        <ol>
+            <p id="box">1. What is the capital of Australia?</p>
+            Answer: <input type="text" name="answer">
+                <button type="button" onclick="validate()">Check</button>
+            
+                <p id="box_2">2. How many sets are in a tennis match?</p>
+            <label for="Tennis">Choose:</label>
+            <select name="Tennis" id="Tennis">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+            </select>
+            <input type="submit" value="Submit" onclick="validate2()">
+            
+            <p id="box3">3. How many countries are in North America?</p> 
+            Answer: <input type="text" name="answer3">
+            <button type="button" onclick="validate3()">Check</button>
+            
+            <p id="box4">4. What is the smallest country in the world?</p> <br>
+            
+            <input type="radio" id="css" name="Country" value="Vatican City">
+                <label for="css">Vatican City</label><br>
+                <input type="radio" id="USA" name="Country" value="USA">
+                <label for="css">USA</label><br>
+                <input type="radio" id="javascript" name="Country" value="UK">
+                <label for="UK">UK</label><br>
+            <input type="submit" value="Submit" onclick="validate4()">
+
+            <p id="box5">5. How long is a football match (minutes)</p>
+            Answer: <input type="text" name="answer5">
+                <button type="button" onclick="validate5()">Check</button>
+            
+
+        </ol>
+    </form>
+    <script>
+	
+        function validate() {
+            var x = document.forms["question"]["answer"].value;
+            if (x != "Canberra") {
+                document.getElementById("box").style.color="red"; 
+              }
+            else if (x == "Canberra")
+            {
+                   alert("Correct!");	
+            }
+    
+        }
+        function validate2() {
+            var x = document.forms["question"]["Tennis"].value;
+            if (x != "3") {
+                document.getElementById("box_2").style.color="red"; 
+              }
+            else
+            {
+                   alert("Correct!");	
+            }
+    
+        }
+        function validate3() {
+            var x = document.forms["question"]["answer3"].value;
+            if (x != "3") {
+                document.getElementById("box3").style.color="red"; 
+              }
+            else if (x == "3")
+            {
+                   alert("Correct!");	
+            }
+    
+        }
+        function validate4() {
+            var x = document.forms["question"]["css"].value;
+            if (x != "Vatican City") {
+                document.getElementById("box4").style.color="red"; 
+              }
+            else
+            {
+                   alert("Correct!");	
+            }
+    
+        }
+        function validate5() {
+            var x = document.forms["question"]["answer5"].value;
+            if (x != "90") {
+                document.getElementById("box5").style.color="red"; 
+              }
+            else if (x == 90)
+            {
+                   alert("Correct!");	
+            }
+    
+        }
+    </script>
+</body>
+</html>
