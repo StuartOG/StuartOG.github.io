@@ -2,9 +2,14 @@
     margin: 0;
     font-family: 'Poppins', 'sans-serif';
     box-sizing: border-box;
-    text-align: center;
     background: #001e4d;
     color: antiquewhite;
     margin: 7px;
     padding: 0px;
+}
+.right_column{
+    text-align: right;
+}
+.left_column{
+    text-align: left;
 }
