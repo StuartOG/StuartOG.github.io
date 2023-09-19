@@ -1,4 +1,11 @@
-*{
+
+.right_column{
+    text-align: right;
+}
+.left_column{
+    text-align: left;
+}
+#page{
     margin: 0;
     font-family: 'Poppins', 'sans-serif';
     box-sizing: border-box;
@@ -6,10 +13,4 @@
     color: antiquewhite;
     margin: 7px;
     padding: 0px;
-}
-.right_column{
-    text-align: right;
-}
-.left_column{
-    text-align: left;
 }
