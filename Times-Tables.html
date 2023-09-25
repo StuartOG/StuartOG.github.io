@@ -20,10 +20,14 @@
         var table = "";
         var num = document.getElementById("number").value;
         var limit = document.getElementById("rows").value;
-        for (var i=1;i<=limit;i++) {
-            table = table + "<p>"+i+" times " + num + " equals " + (i*num) +"</p>"
+        if (num < 0 || limit < 0) {
+            alert("Error please input valid number")
+        } else {
+            for (var i=1;i<=limit;i++) {
+                table = table + "<p>"+i+" times " + num + " equals " + (i*num) +"</p>"
+            }
+            document.getElementById("output").innerHTML = table;
         }
-        document.getElementById("output").innerHTML = table;
         return false;
     }
     function test(){
